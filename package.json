@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/bbc/gel-check#readme",
   "devDependencies": {
-    "cypress": "^3.4.1"
+    "cypress": "^3.4.1",
+    "cypress-cucumber-preprocessor": "^1.13.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }
