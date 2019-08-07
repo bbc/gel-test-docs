@@ -4,8 +4,10 @@
   "description": "Useful tools for checking your implementation of a GEL pattern.",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run",
-    "test:open": "cypress open",
+    "test": "start-server-and-test serve http://localhost:5000 cypress:run",
+    "test:open": "start-server-and-test serve http://localhost:5000 cypress:open",
+    "cypress:run": "cypress run",
+    "cypress:open": "cypress open",
     "serve": "serve ./public"
   },
   "repository": {
@@ -21,7 +23,8 @@
   "devDependencies": {
     "cypress": "^3.4.1",
     "cypress-cucumber-preprocessor": "^1.13.0",
-    "serve": "^11.1.0"
+    "serve": "^11.1.0",
+    "start-server-and-test": "^1.9.2"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
