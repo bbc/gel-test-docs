@@ -4,7 +4,8 @@
   "description": "Useful tools for checking your implementation of a GEL pattern.",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run"
+    "test": "cypress run",
+    "test:open": "cypress open",
   },
   "repository": {
     "type": "git",
