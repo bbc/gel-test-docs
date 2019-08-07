@@ -1,0 +1,22 @@
+{
+  "name": "gel-check",
+  "version": "0.1.0",
+  "description": "Useful tools for checking your implementation of a GEL pattern.",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbc/gel-check.git"
+  },
+  "author": "BBC Accessibility",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bbc/gel-check/issues"
+  },
+  "homepage": "https://github.com/bbc/gel-check#readme",
+  "devDependencies": {
+    "cypress": "^3.4.1"
+  }
+}
