@@ -1,7 +1,7 @@
 {
   "name": "gel-check",
   "version": "0.1.0",
-  "description": "Useful tools for checking your implementation of a GEL pattern.",
+  "description": "Useful tools to check your implementation of a GEL Design Pattern.",
   "main": "index.js",
   "scripts": {
     "test": "start-server-and-test serve http://localhost:5000 cypress:run",
