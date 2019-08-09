@@ -32,3 +32,23 @@ And('that "<a>" element has an "href" attribute that is not empty', () => {
       .should('have.attr', 'href')
       .and('not.be.undefined');
 });
+
+
+// Promo link contains text
+// ------------------------
+
+Given('a promo that contains a link', () => {
+  cy.get('.gel-promo').as('promos');
+  cy.get('@promos')
+    .find('a').as('promosAnchors');
+});
+
+Then('the "<a>" element is not empty', () => {
+  cy.get('@promosAnchors').each($anchor => {
+    expect($anchor.html()).not.to.be.undefined;
+  });
+});
+
+And('contains a text node', () => {
+  // Hmm.
+});
