@@ -1,16 +1,34 @@
 import { Given, Then, And } from "cypress-cucumber-preprocessor/steps";
 
-// Promo selector.
-const promo = '';
+// Promo contains a link to other content
+// --------------------------------------
 
 Given('a promo with content', () => {
-  // Check promo has content.
+  // Get all `.gel-promo`s on the page and alias the
+  // selection as `promos` for future use in our tests.
+  cy.get('.gel-promo').as('promos');
+
+  // Get our previous selection and check that our promos
+  // have at least one child - a promo with content.
+  cy.get('@promos')
+    .children()
+    .should('have.length.greaterThan', 1);
 });
 
 Then('the promo content contains an "<a>" element', () => {
-  // Check content contains and <a>
+  // For each promo in our selection...
+  cy.get('@promos').each($promo => {
+    // Ensure that within...
+    cy.get($promo).within(() => {
+      // We can select one or more anchor tags.
+      cy.get('a');
+    });
+  });
 });
 
 And('that "<a>" element has an "href" attribute that is not empty', () => {
-  // Check <a> has the appropriate attribute.
+  cy.get('@promos')
+    .find('a')
+      .should('have.attr', 'href')
+      .and('not.be.undefined');
 });
