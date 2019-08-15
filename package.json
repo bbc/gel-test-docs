@@ -21,12 +21,10 @@
   },
   "homepage": "https://github.com/bbc/gel-check#readme",
   "devDependencies": {
+    "axe-core": "^3.3.1",
     "cypress": "^3.4.1",
-    "cypress-cucumber-preprocessor": "^1.13.0",
+    "cypress-axe": "^0.5.1",
     "serve": "^11.1.0",
     "start-server-and-test": "^1.9.2"
-  },
-  "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
   }
 }
