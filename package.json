@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "start-server-and-test serve http://localhost:5000 cypress:run",
-    "test:open": "start-server-and-test serve http://localhost:5000 cypress:open",
+    "test:browser": "start-server-and-test serve http://localhost:5000 cypress:browser",
     "cypress:run": "cypress run",
-    "cypress:open": "cypress open",
+    "cypress:browser": "cypress open",
     "serve": "serve ./public"
   },
   "repository": {

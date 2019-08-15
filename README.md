@@ -18,5 +18,5 @@ npm install
 #### `npm test`
 To run suite in headless mode.
 
-#### `npm run test:open`
+#### `npm run test:browser`
 To run suite interactively.
