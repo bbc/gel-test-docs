@@ -1,12 +1,12 @@
-import Gel from '../../gel.js';
+import GelCheck from '../../GelCheck.js';
 import checks from '../../checks.json';
 
-const gel = new Gel(cy);
+const gelCheck = new GelCheck(cy);
 
 checks.forEach((check) => {
-  const { url, selector, options } = check;
+  const { selector, url, options } = check;
 
   it(`${selector} passes GEL accessibility tests`, () => {
-    gel.check(url, selector, options);
+    gelCheck.component(selector, url, options);
   });
 });
