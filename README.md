@@ -15,12 +15,12 @@ cd gel-check
 npm install
 ```
 
-### Usage
+## Usage
 You will need:
 - The `url` of a page where your component exists.
 - A unique `selector` identifying your component(s) on the page.
 
-#### 1. Add checks
+### 1. Add checks
 Open `checks.json` and add a check object representing your check to the array. See an example of this below.
 
 ```
@@ -32,7 +32,7 @@ Open `checks.json` and add a check object representing your check to the array. 
 ]
 ```
 
-##### With options
+#### With options
 To reconfigure your check, you can pass an options object. [See a full list of options](https://www.deque.com/axe/axe-for-web/documentation/api-documentation/#options-parameter).
 ```
 [
@@ -48,10 +48,13 @@ To reconfigure your check, you can pass an options object. [See a full list of o
 ]
 ```
 
-#### 2. Run checks
+### 2. Run checks
 
-##### `npm test`
+#### `npm test`
 To run interactively.
 
-##### `npm run test:headless`
+#### `npm run test:headless`
 To run headlessly.
+
+## Contributing
+We love contributors. If you have an idea for how to make an improvement, let us know by [creating an issue](https://github.com/bbc/gel-check/issues) to discuss your idea. We recommend you familiarise yourself with [the process of creating a pull-request in GitHub](https://help.github.com/en/articles/creating-a-pull-request) before proceeding.
