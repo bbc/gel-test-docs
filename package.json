@@ -8,6 +8,7 @@
     "test:headless": "start-server-and-test serve http://localhost:5000 cypress:headless",
     "cypress": "cypress open",
     "cypress:headless": "cypress run",
+    "serve": "serve --no-clipboard ./public"
   },
   "repository": {
     "type": "git",
