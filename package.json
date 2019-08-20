@@ -4,11 +4,10 @@
   "description": "Useful tools to check your implementation of a GEL Design Pattern.",
   "main": "index.js",
   "scripts": {
-    "test": "start-server-and-test serve http://localhost:5000 cypress:run",
-    "test:browser": "start-server-and-test serve http://localhost:5000 cypress:browser",
-    "cypress:run": "cypress run",
-    "cypress:browser": "cypress open",
-    "serve": "serve ./public"
+    "test": "start-server-and-test serve http://localhost:5000 cypress",
+    "test:headless": "start-server-and-test serve http://localhost:5000 cypress:headless",
+    "cypress": "cypress open",
+    "cypress:headless": "cypress run",
   },
   "repository": {
     "type": "git",
