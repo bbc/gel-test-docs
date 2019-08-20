@@ -16,6 +16,8 @@ class GelCheck {
     }, userOptions);
   }
 
+  component(selector, url, options = {}) {
+    if (!selector) throw new Error('Could not select a component - `selector` undefined.');
 
     this.cy.visit(url);
     this.cy.injectAxe();
