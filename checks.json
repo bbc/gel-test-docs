@@ -2,12 +2,15 @@
   {
     "url": "https://bbc.github.io/gel/components/demos/promos/",
     "selector": ".gel-promo",
-    "options": {}
+    "options": {
+      "rules": {
+        "skip-link": { "enabled": false }
+      }
+    }
   },
 
   {
     "url": "https://bbc.github.io/gel/components/demos/accordions/",
-    "selector": ".gel-accordion",
-    "options": {}
+    "selector": ".gel-accordion"
   }
 ]

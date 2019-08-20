@@ -16,10 +16,6 @@ class GelCheck {
     }, userOptions);
   }
 
-  component(selector, url, userOptions = {}) {
-    const options = Object.assign(userOptions, {
-      rules: { 'skip-link': { 'enabled': false } }
-    });
 
     this.cy.visit(url);
     this.cy.injectAxe();
