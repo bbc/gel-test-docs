@@ -17,36 +17,25 @@ npm install
 
 ## Usage
 You will need:
-- The `url` of a page where your component exists.
+- Your GEL component's `type`. [See the table](https://bbc.github.io/gel/).
+- The `url` of a page where your component exists. See tip below.
 - A unique `selector` identifying your component(s) on the page.
 
 ### 1. Add checks
-Open `checks.json` and add a check object representing your check to the array. See an example of this below.
+Open `checks.json` and add a check object to the array. See an example of this below.
 
 ```
 [
   {
+    "type": "accordion",
     "url": "https://bbc.github.io/gel/components/demos/accordions/",
     "selector": ".gel-accordion"
   }
 ]
 ```
 
-#### With options
-To reconfigure your check, you can pass an options object. [See a full list of options](https://www.deque.com/axe/axe-for-web/documentation/api-documentation/#options-parameter).
-```
-[
-  {
-    "url": "https://bbc.github.io/gel/components/demos/promos/",
-    "selector": ".gel-promo",
-    "options": {
-      "rules": {
-        "skip-link": { "enabled": false }
-      }
-    }
-  }
-]
-```
+#### Tip
+If your component isn't currently hosted, pop it into the `public` directory and it will be hosted for you locally. You can then refer to from `/` in `url`.
 
 ### 2. Run checks
 
