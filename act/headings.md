@@ -8,7 +8,7 @@ gel-foundations-headings
 
 Headings provide a semantic and visual hierarchical structure to a document.
 
-This rule tests that pages have a heading structure meets the requirement of BBC GEL Headings.
+This rule tests that pages have a heading structure that meets the requirements of BBC GEL Headings.
 
 ## Rule Type
 
@@ -134,4 +134,3 @@ The `<h2>` subheading is followed by an `<h4>` subheading, skipping a level. Con
 Last modified: 2020-10-04
 
 ## Glossary
-
