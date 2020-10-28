@@ -42,7 +42,7 @@ Each accordion component consist of two or more accordion items; an accordion it
 
 ### Expectation 2
 
-Each accodion item has a keyboard, touch, and pointing device accessible control that is used to expand and collapse the accordion item.
+Each accordion item has a keyboard, touch, and pointing device accessible control that is used to expand and collapse the accordion item.
 
 ### Expectation 3
 
